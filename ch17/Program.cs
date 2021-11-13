@@ -58,7 +58,6 @@ namespace ch4
                     {
                         FileDemo();
                         break;
-                    break;
                     }
 
                     // this will demonstrate how to read an input file in C# 	 
