@@ -59,7 +59,6 @@ namespace ch4
                     {
                         FileDemo();
                         break;
-                    break;
                     }
 
                     // this will demonstrate how to read an input file in C# 	 
@@ -132,6 +131,9 @@ namespace ch4
             // 18.6 get a substring from the original string
             new_string = my_string.Substring(0, 10);
             System.Console.WriteLine("The first 10 characters of my_string: "+new_string);
+
+            System.Console.WriteLine("Press any key to continue");
+            System.Console.ReadLine();
  
         }
 
