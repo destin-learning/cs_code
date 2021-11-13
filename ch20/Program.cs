@@ -19,6 +19,7 @@ namespace ch4
                 System.Console.WriteLine("4) File input demo");
                 System.Console.WriteLine("5) String Function Demo ");
                 System.Console.WriteLine("6) Date Function Demo");
+                System.Console.WriteLine("7) Object Demo");
                 System.Console.WriteLine("9) Select to exit the program");
                 System.Console.WriteLine("Please Enter Your Selection:");
 
@@ -60,7 +61,6 @@ namespace ch4
                     {
                         FileDemo();
                         break;
-                    break;
                     }
 
                     // this will demonstrate how to read an input file in C# 	 
@@ -84,6 +84,13 @@ namespace ch4
                         break;
                     }
 
+                    // this will how to construct and use a basic object in C#	 
+                    case 7: 										 
+                    {
+                        ObjectDemo();
+                        break;
+                    }
+
                     // check to see if we are done with the program
                     // change this to use an integer now
                     case 9: // 12.3
@@ -102,6 +109,24 @@ namespace ch4
 
                 
             } // 10.6 end of loop code
+
+        }
+
+        // this will how to construct and use a basic object in C#
+        public static void ObjectDemo()
+        {
+            System.Console.WriteLine("Object demo selected.");
+            Person my_person = new Person(1,
+            "Eric", "Frick", new DateTime(2017, 1, 1), 
+	        "sales@destinlearning.com",
+                "111-222-3333");
+ 
+            // now print out our newly created object
+            System.Console.WriteLine("My new person object: " 
+            + my_person.ToString());
+
+            System.Console.WriteLine("Press any key to continue");
+            System.Console.ReadLine();
 
         }
 
